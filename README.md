@@ -17,7 +17,7 @@ The following example demonstrate how to use the network-security-group module w
 
 ```hcl
 module "network-security-group" {
-    source                     = "Azure/network-security-group/azurerm"
+    source                     = "cloudacademy/network-security-group/azurerm"
     resource_group_name        = "nsg-resource-group"
     location                   = "westus"
     security_group_name        = "nsg"
@@ -56,7 +56,7 @@ The following example demonstrate how to use the pre-defined HTTP module with a 
 
 ```hcl
 module "network-security-group" {
-    source                     = "Azure/network-security-group/azurerm//modules/HTTP"
+    source                     = "cloudacademy/network-security-group/azurerm//modules/HTTP"
     resource_group_name        = "nsg-resource-group"
     location                   = "westus"
     security_group_name        = "nsg"
