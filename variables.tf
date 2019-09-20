@@ -6,6 +6,11 @@ variable "resource_group_name" {
 
 variable "location" {}
 
+variable create_resource_group {
+  description = "Create a resource group? (true/false)"
+  default     = "false"
+}
+
 variable "security_group_name" {
   description = "Network security group name"
   default     = "nsg"
